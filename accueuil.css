@@ -1,0 +1,108 @@
+h1{
+    font-size: 2em;
+}
+p{
+    font-size: 1.5em;
+}
+#bloc_location p{
+    font-size: 1.2em;
+}
+h2{
+    font-size: 1.6em;
+}
+
+/*=================================FONT==================================================*/
+header nav{
+    text-align: center;   
+}
+.logo{
+   width: 50%;
+   height: 45px;
+}
+
+#bloc_location{
+    display: flex;
+    padding-left: 25%;
+    width: 100%;
+    font-size: 1.3em;
+}
+#bloc_location span {
+    margin-top: 4%;
+    margin-right:5% ;
+}
+
+/*====================================SECTION PART======================================*/
+section{
+    padding-left: 15%;
+   
+}
+#button_explorer{
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 55%;
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 8px 0px;
+    color: white;
+    background-color: rgb(206, 37, 206);
+    font-size: 1.2em; 
+}
+
+/*=====================================MAIN_BLOC=========================================*/
+li{
+    display: flex;
+    margin-top: 5%;
+}
+.number_list{
+   border: 1px solid;
+   border-color: transparent;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   margin-top: 40px;
+   position: relative;left: 10px;
+   background-color: purple;
+    
+}
+.number_list i{
+    margin-left: 11px;
+    margin-top: 6px;
+    color: white;
+    font-size: 1.1em;
+    
+}
+
+.container_fonct{
+    border: 1px solid;
+    padding: 40px 180px 40px 30px;
+    border-radius: 25px;
+    font-size: 1.5em;
+    
+}
+.container_fonct span{
+    margin-right: 30px;
+    color: grey;
+}
+
+#restaurant_section{
+    height: 30%;
+}
+
+
+.food_bloc {
+    border: 1px solid;
+    height: 30%;
+    width: 90%;
+    margin-top: 10%;
+    border-radius: 20px;
+}
+
+.resto_img{
+    height: 10%;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+footer{
+    margin-top: 100%;
+}
