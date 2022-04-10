@@ -16,6 +16,10 @@ h2{
 /*=================================FONT==================================================*/
 body {
     margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    position: relative;
 }
 header nav{
     text-align: center;  
@@ -35,6 +39,7 @@ header nav{
     font-size: 1.3em;
     padding-bottom: 1rem;
     background-color: rgb(220, 220, 220);
+    
 }
 #bloc_location span {
     margin-top: 0.5%;
@@ -47,21 +52,32 @@ header nav{
     background-color: rgb(220, 220, 220);
 }
 
-/*====================================SECTION PART======================================
- section{
-    padding-left: 15%;
-   
+/*====================================SECTION PART======================================*/
+
+.explorer_restau{
+    text-align: center;
+}
+.explorer_restau h1{
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+.explorer_restau P{
+    font-size: 1.3rem;
+    margin: 0px 0px 30px;
+
+    
 }
 #button_explorer{
     margin-top: 2%;
     margin-left: 5%;
-    width: 55%;
+    background-image: linear-gradient(to top, purple, pink);
+    border: none;
+    width: 70%;
     height: 60px;
     border-radius: 30px;
-    box-shadow: 0px 0px 8px 0px;
     color: white;
-    background-color: rgb(206, 37, 206);
-    font-size: 1.2em; 
+    font-size: 1.3em; 
+    font-weight: 300;
 }
 
 /*=====================================MAIN_BLOC=========================================
@@ -121,4 +137,4 @@ li{
 
 footer{
     margin-top: 100%;
-} */
+} 
