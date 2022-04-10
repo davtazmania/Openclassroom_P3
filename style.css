@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 
 
 @media only screen and (min-width: 601px) {
@@ -14,7 +16,8 @@
     
     /*=================================FONT==================================================*/
     header nav{
-        text-align: center;   
+        text-align: center;
+        border: 1px solid; 
     }
     .logo{
        width: 50%;

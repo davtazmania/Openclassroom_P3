@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 h1{
     font-size: 2em;
 }
@@ -12,27 +14,41 @@ h2{
 }
 
 /*=================================FONT==================================================*/
+body {
+    margin: 0px;
+}
 header nav{
-    text-align: center;   
+    text-align: center;  
+    box-shadow: 0px 2px 3px 1px grey;
+    padding-top: 1.5rem;
 }
 .logo{
    width: 50%;
    height: 45px;
 }
-
+/*===================================Header===================================================*/
 #bloc_location{
     display: flex;
+    gap: 9%;
+    padding-top: 5%;
     padding-left: 25%;
-    width: 100%;
     font-size: 1.3em;
+    padding-bottom: 1rem;
+    background-color: rgb(220, 220, 220);
 }
 #bloc_location span {
-    margin-top: 4%;
-    margin-right:5% ;
+    margin-top: 0.5%;
+    
+}
+#search_bar{
+    border: none;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(220, 220, 220);
 }
 
-/*====================================SECTION PART======================================*/
-section{
+/*====================================SECTION PART======================================
+ section{
     padding-left: 15%;
    
 }
@@ -48,7 +64,7 @@ section{
     font-size: 1.2em; 
 }
 
-/*=====================================MAIN_BLOC=========================================*/
+/*=====================================MAIN_BLOC=========================================
 li{
     display: flex;
     margin-top: 5%;
@@ -105,4 +121,4 @@ li{
 
 footer{
     margin-top: 100%;
-}
+} */
