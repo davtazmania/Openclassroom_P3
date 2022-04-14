@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" media="screen and (max-width:375px)" href="accueuil.css">
+    <link rel="stylesheet" media="screen and (max-width:375px)" href="./css/mobile_main.css">
     <script src="https://kit.fontawesome.com/14b9616f44.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh my food</title>
@@ -21,9 +21,11 @@
         <section class="explorer_restau">
             <h1>Réservez le menu qui <br>vous convient</h1>
             <p>Découvrez des restaurants d'exception,<br> séléctionés par nos soins.</p>
-            <div class="btn-test">
-                <button onclick="location.href='#'" id="button_explorer" type="button">Explorer nos restaurants</button>
-            </div>
+            <a class="btn-test">
+                <div href = "#">
+                    <button onclick="location.href='#'" id="button_explorer" type="button">Explorer nos restaurants</button>
+                </div>
+            </a>
         </section>
         <div id="main_bloc">
             <aside>
@@ -31,89 +33,147 @@
                 <ul>
                     <li>
                         <div class="number_list">
-                            <span><i class="fa-regular fa-1"></i></span>
+                            1 
                         </div>
                         <div class="container_fonct">
-                            <span><i class="fa-solid fa-mobile-screen-button"></i></span>
+                            <a href ="#"><span><i class="fa-solid fa-mobile-screen-button"></i></span></a>
                             <a href = "#"> Choisissez un restaurant</a>
                         </div>    
                     </li>
                     <li>
                         <div class="number_list">
-                            <span><i class="fa-regular fa-2"></i></i></span>
+                           2
                         </div>
                         <div class="container_fonct">
-                            <span><i class="fa-solid fa-list-ul"></i></span>
+                            <a href = "#"><span><i class="fa-solid fa-list-ul"></i></span></a>
                             <a href = "#"> Composez votre menu</a>
                         </div>    
                     </li>
                     <li>
                         <div class="number_list">
-                            <span><i class="fa-regular fa-3"></i></i></span>
+                           3
                         </div>
                         <div class="container_fonct">
-                            <span><i class="fa-solid fa-store"></i></span>
+                            <a href = "#"><span><i class="fa-solid fa-store"></i></span></a>
                             <a href = "#"> Dégustez au restanrant</a>
                         </div>    
                     </li>
                     
                 </ul>
             </aside>
-            <section id="restaurant_section">
+            <section id="menus_bloc">
                 <h1> Restaurants</h1>
-                <div class="food_bloc">
-                    <a class="restaurant_link">
-                        <img class="resto_img" src=" alt="">
-                        <div class="bloc_text">
-                            <h2>La palette du goût <span><i class="fa-regular fa-heart"></i></span></h2>
-                            <p>Ménilmontant</p>
-                        </div>     
-                    </a>
-                </div>
-                <div class="food_bloc">
-                    <a class="restaurant_link">
-                        <img class="resto_img" src=" alt="">
-                        <div class="bloc_text">
-                            <h2>La note enchantée<span><i class="fa-regular fa-heart"></i></span></h2>
-                            <p>Charonne</p>
-                        </div>     
-                    </a>
-                </div>
-                <div class="food_bloc">
-                    <a class="restaurant_link">
-                        <img class="resto_img" src="" alt="">
-                        <div class="bloc_text">
-                            <h2>La note enchantée<span><i class="fa-regular fa-heart"></i></span></h2>
-                            <p>Charonne</p>
-                        </div>     
-                    </a>
-                </div>
-                <div class="food_bloc">
-                    <a class="restaurant_link">
-                        <img class="resto_img" src="" alt="">
-                        <div class="bloc_text">
-                            <h2>La note enchantée<span><i class="fa-regular fa-heart"></i></span></h2>
-                            <p>Charonne</p>
-                        </div>     
-                    </a>
+                <div class="menus_section">
+                    <div class="food_bloc">
+                        <a href = "#" class="restaurant_link">
+                            <div class="card_img">
+                                <span class="menus_nouveau">
+                                    Nouveau
+                                </span>
+                                <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                            </div>
+                            <div class="card_description">
+                                <div class="description">
+                                    <h2>Le palet du goût</h2>
+                                    <p>Ménilmontant</p>
+                                </div>
+                                <span><i class="fa-regular fa-heart"></i>  
+                            </div>    
+                        </a>
+                    </div>    
+                    <div class="food_bloc">
+                        <a href = "#" class="restaurant_link">
+                            <div class="card_img">
+                                <span class="menus_nouveau">
+                                    Nouveau
+                                </span>
+                                <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                            </div>
+                            <div class="card_description">
+                                <div class="description">
+                                    <h2>Le palet du goût</h2>
+                                    <p>Ménilmontant</p>
+                                </div>
+                                <span><i class="fa-regular fa-heart"></i>  
+                            </div>    
+                        </a>
+                    </div>    
+                    <div class="food_bloc">
+                        <a href = "#" class="restaurant_link">
+                            <div class="card_img">
+                                <span class="menus_nouveau">
+                                    Nouveau
+                                </span>
+                                <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                            </div>
+                            <div class="card_description">
+                                <div class="description">
+                                    <h2>Le palet du goût</h2>
+                                    <p>Ménilmontant</p>
+                                </div>
+                                <span><i class="fa-regular fa-heart"></i></span>  
+                            </div>    
+                        </a>
+                    </div>    
+                    <div class="food_bloc">
+                        <a href = "#" class="restaurant_link">
+                            <div class="card_img">
+                                <span class="menus_nouveau">
+                                    Nouveau
+                                </span>
+                                <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                            </div>
+                            <div class="card_description">
+                                <div class="description">
+                                    <h2>Le palet du goût</h2>
+                                    <p>Ménilmontant</p>
+                                </div>
+                                <span><i class="fa-regular fa-heart"></i>  
+                            </div>    
+                        </a>
+                    </div>    
+                    <div class="food_bloc">
+                        <a href = "#" class="restaurant_link">
+                            <div class="card_img">
+                                <span class="menus_nouveau">
+                                    Nouveau
+                                </span>
+                                <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                            </div>
+                            <div class="card_description">
+                                <div class="description">
+                                    <h2>Le palet du goût</h2>
+                                    <p>Ménilmontant</p>
+                                </div>
+                                <span><i class="fa-regular fa-heart"></i>  
+                            </div>    
+                        </a>
+                    </div>    
+                        
+
                 </div>
             </section>
         </div>
+          
+
+
     </main>
     <footer>
-        <img> logo
-        <a>
-            <span><i class="fa-solid fa-utensils"></i></span> Proposer un restautant
-        </a>
-        <a>
-            <span><i class="fa-solid fa-handshake-angle"></i></span> Devenir partenaire
-        </a>
-        <a>
-            Mention légales
-        </a>
-        <a>
-            Contact
-        </a>
+        <h3>oh my food</h3>
+        <ul class="footer_list">
+            <li>
+                <span><i class="fa-solid fa-utensils"></i></span> Proposer un restautant
+            </li>
+            <li>
+                <span><i class="fa-solid fa-handshake-angle"></i></span> Devenir partenaire
+            </li>
+            <li>
+                Mention légales
+            </li>
+            <li>
+                Contact
+            </li>
+        </ul>
     </footer>
 </body> 
 </html>
