@@ -1,3 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+
+h1{
+    font-family: "Shrikhand", arial, sans-serif;
+    font-size: 1.6rem;
+    margin-left: 5%;
+}
+h2{
+    font-size: 1.4rem;
+    padding-bottom: 10PX;
+    PADD
+}
+
+h3{
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0;
+}
+
+footer h3{
+    font-family: "Shrikhand", arial, sans-serif;
+    margin-left: 2rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+ul{
+    padding: 0px;
+    margin-left: 1rem;
+}
+li{
+    display: flex;
+    margin-top: 5%;
+    align-items: left;
+}
+/*===============================================*/
 body{
-    background-color: blue;
+    margin: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    gap: 19%;
+    height: 4rem;
+}
+.fa-arrow-left:before {
+    content: "\f060";
+    font-size: 1.5rem;
+   margin-left: 2rem;
+}
+/*====================HEADER============================*/
+main{
+    font-family: "Roboto", arial, sans-serif;
+    background-color: #efefef;
+    padding-bottom: 40px;
+}
+.title_bloc{
+    display: flex;
+    align-items: center;
+    gap: 27%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: -1.4rem;
+    position: relative;
+    background-color: #efefef;
+    padding-top: 1rem;
+    
+    
+}
+.title_bloc span{
+    content: "\f004";
+    font-size: 1.6rem;
+}
+.restaurant_img{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+restaurant{
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+.heart_1{
+    font-size: 2rem;
+    position: absolute;
+    opacity: 1;
+}
+.heart_2{
+    color: transparent;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(to bottom left, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  -webkit-transition: 900ms;
+  transition: 700ms;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  position: relative;
+}
+
+.heart_1:hover{
+    opacity: 0;
+}
+.heart_2:hover{
+    opacity: 1;
+    transform: scale(2.4);
+   
+}
+
+/*=============================================================*/
+section{
+    margin: 5%;
+}
+.menu_bloc{
+}
+.menu_bloc_test{
+  width: 85%;  
+}
+.restaurant_menu{
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    margin-top: 1rem;
+    border-radius: 15px;
+    height: 4rem;
+    box-shadow: 10px 10px 20px #565656;
+    
+}
+
+.menu_bloc_test{
+    padding-left: 10px;
+    width: 100%;
+}
+b{
+    margin-top: 1.9rem;  
+}
+.menu__liste__item__circle{
+    opacity: 0;
+    right: -65px;
+}
+
+.restaurant_menu:hover > .menu__liste__item__circle{ 
+    width: 65px;
+    height: 70px;
+    background-color: #99e2d0;
+    border-radius: 0px 15px 15px 0px;
+    position: relative;
+    opacity: 1;
+    height: 4rem;
+    transition: 1200ms;
+    margin-right: 65px;
+    transform: rotate(1turn);
+}
+.restaurant_menu:hover > b{
+    margin-right: -50px;
+}
+.menu__liste__item__circle i{
+    color: white;
+    margin-top: 1.2rem;
+    margin-left: 0.7rem;
+    font-size: 1.2rem;
+    transition: all ease-in-out 500ms;
+    overflow: hidden;
+}
+#button_explorer{
+    margin-top: 2%;
+    margin-left: 15%;
+    background-image: linear-gradient(to top,#9356DC, #FF79DA);
+    border: none;
+    width: 70%;
+    height: 60px;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.3em; 
+    font-weight: 300;
+    box-shadow: 3px 3px 13px 1px rgba(0,0,0,0.53);  
+}
+
+.button:hover{
+    animation: button 1s ease forwards;
+    animation: display 400ms ease-out 3000ms normal both;
+}
+
+
+/*============================================================*/
+footer{
+    background-color: #232323;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 0
+} 
+footer ul{
+    margin-left: 2rem;
+}
+footer li{
+    gap: 5%;
 }

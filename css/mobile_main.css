@@ -20,13 +20,17 @@ p{
     font-size: 1.2em;
 }
 h2{
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 h3{
     font-family: "Shrikhand", arial, sans-serif;
-    margin-left: 2rem;
-    
+    margin-left: 2rem; 
+    margin-bottom: 0; 
+}
+a{
+    color: black;
+    text-decoration: none;
 }
 
 /*=================================FONT==================================================*/
@@ -101,12 +105,21 @@ header nav{
     font-weight: 300;
     box-shadow: 3px 3px 13px 1px rgba(0,0,0,0.53);  
 }
+.button:hover{
+    animation: button 1s ease forwards;
+    animation: display 400ms ease-out 3000ms normal both;
+}
+
+
+}
 
 /*===================================EXPLORE BUTTON===========================================*/
 aside{
     padding-top: 2rem;
     padding-bottom: 3.4rem;
-
+}
+aside li:hover{
+    ba
 }
 ul{
     padding: 0px;
@@ -139,11 +152,15 @@ li{
     margin-left: 0.6rem;
     box-shadow: 3px 3px 13px 1px rgba(0,0,0,0.53);
 }
+.container_fonct:hover{
+    background-color: #e4d5f6;
+}
+
 /*==============================MENUS================================================*/
 #menus_bloc{
     background-color: #f6f6f6;
     padding: 4rem 1.2rem;
-    height: 225vh;
+    height: 170vh;
     
 }
 .menus_section{
@@ -188,22 +205,53 @@ li{
 }
 .card_description{
     display: flex;
+    justify-content: space-between;
+    gap: 5%;
     margin-left: 1rem;
+    margin-right: 2rem;
+    margin-bottom: ;
 }
 .card_description span{
-    font-size: 2rem;
+    
 }
 .fa-heart{
-    margin-left: 8.5rem;
-    margin-top: 1.5rem;
-
+    margin-top: 1.2rem;
 }
+.heart_1{
+    font-size: 2rem;
+    position: absolute;
+    opacity: 1;
+}
+.heart_2{
+    color: transparent;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(to bottom left, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  -webkit-transition: 900ms;
+  transition: 700ms;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  position: relative;top: 0.5rem;
+}
+
+.heart_1:hover{
+    opacity: 0;
+}
+.heart_2:hover{
+    opacity: 1;
+    transform: scale(2.4);
+   
+}
+
 /*============================================================*/
 footer{
     background-color: #232323;
     display: flex;
     flex-direction: column;
     color: white;
+    margin-bottom: 0
 } 
 footer ul{
     margin-left: 2rem;
