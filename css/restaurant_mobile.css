@@ -8,14 +8,23 @@ h1{
 }
 h2{
     font-size: 1.4rem;
-    padding-bottom: 10PX;
-    PADD
+    position: relative;
+}
+h2::after{
+    content: "";
+    height: 0.25rem;
+    width: 1.25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    top: 1.8rem;
+    left: 0rem;
+    width: 2.5rem;
 }
 
 h3{
     text-overflow: ellipsis;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0;
 }
 
@@ -28,6 +37,10 @@ footer h3{
 p {
     margin: 0;
     font-size: 0.9rem;
+}
+b{
+    margin-top: 1.9rem;
+    margin-right: -2rem;  
 }
 a{
     color: black;
@@ -49,7 +62,7 @@ body{
 header{
     display: flex;
     align-items: center;
-    gap: 19%;
+    gap: 13%;
     height: 4rem;
 }
 .fa-arrow-left:before {
@@ -66,7 +79,7 @@ main{
 .title_bloc{
     display: flex;
     align-items: center;
-    gap: 27%;
+    gap: 20%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     margin-top: -1.4rem;
@@ -121,6 +134,8 @@ restaurant{
 /*=============================================================*/
 section{
     margin: 5%;
+    display: grid;
+    margin-top: 1rem;
 }
 .menu_bloc{
 }
@@ -134,44 +149,51 @@ section{
     margin-top: 1rem;
     border-radius: 15px;
     height: 4rem;
-    box-shadow: 10px 10px 20px #565656;
-    
+    box-shadow: 2px 3px 4px grey;
+    overflow: hidden;
 }
 
 .menu_bloc_test{
     padding-left: 10px;
     width: 100%;
 }
-b{
-    margin-top: 1.9rem;  
-}
-.menu__liste__item__circle{
-    opacity: 0;
-    right: -65px;
-}
 
-.restaurant_menu:hover > .menu__liste__item__circle{ 
-    width: 65px;
+.menu__liste__item__circle{
+    padding: 1rem;
     height: 70px;
     background-color: #99e2d0;
     border-radius: 0px 15px 15px 0px;
     position: relative;
     opacity: 1;
     height: 4rem;
-    transition: 1200ms;
-    margin-right: 65px;
-    transform: rotate(1turn);
+    right: -3.4rem;
+    display: grid;
+    align-items: center;
+    color: white;
+    transition: all ease-in-out 450ms;
+    font-size: 1.4rem;
 }
+
+.restaurant_menu:hover > .menu__liste__item__circle{ 
+    margin-right: 55px;
+}
+.menu__liste__item__circle .fa-solid{
+    background-color: #99e2d0;
+    transform: rotate(0deg);
+}
+
+.restaurant_menu:hover .menu__liste__item__circle .fa-circle-check{
+    transition: transform 500ms ease-in-out;
+    transform: rotate(360deg);
+}
+
+
 .restaurant_menu:hover > b{
-    margin-right: -50px;
+    margin-right: -2rem;
 }
 .menu__liste__item__circle i{
-    color: white;
-    margin-top: 1.2rem;
-    margin-left: 0.7rem;
-    font-size: 1.2rem;
-    transition: all ease-in-out 500ms;
-    overflow: hidden;
+
+    
 }
 #button_explorer{
     margin-top: 2%;
