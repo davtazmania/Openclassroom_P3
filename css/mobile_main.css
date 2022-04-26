@@ -6,11 +6,20 @@ html{
     padding: 0;
 }
 h1{
-    font-size: 1em;
-    margin-left: 1.4rem;
-    width: 70%;
+    font-family: "Shrikhand", arial, sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-bottom: 7px;
 }
-.description h2{
+
+h2{
+    font-size: 2em;
+    width: 100%;
+    margin-left: 1rem;
+}
+.description h3{
     font-size: 1.2em;
     margin-top: 0rem;
 }
@@ -20,11 +29,11 @@ p{
 #bloc_location p{
     font-size: 1.2em;
 }
-h2{
+h3{
     font-size: 1.2em;
     font-weight: bold;
 }
-h3{
+h4{
     font-family: "Shrikhand", arial, sans-serif;
     margin-left: 2rem; 
     margin-bottom: 0; 
@@ -52,15 +61,18 @@ header nav{
    width: 50%;
    height: 45px;
 }
+
 /*===================================Header===================================================*/
 #bloc_location{
     display: flex;
-    gap: 9%;
-    padding-top: 5%;
+    gap: 25px;
+    padding-top: 18px;
     padding-left: 25%;
     font-size: 1.3em;
-    padding-bottom: 1rem;
+    padding-bottom: 15px;
+    justify-content: center;
     background-color: rgb(212, 212, 212);
+    padding-left: 7rem;
     
 }
 #bloc_location span {
@@ -73,7 +85,17 @@ header nav{
     font-family: 'Roboto', sans-serif;
     background-color: rgb(212, 212, 212);
 }
-
+/*@media screen and (min-width: 950px){
+    aside ul{
+        display: flex;
+    }
+    li{
+        width: 33%;
+    }
+    h2{
+        margin-left: 1.4rem;
+    }
+ }*/
 /*====================================SECTION PART======================================*/
 
 .explorer_restau{
@@ -83,41 +105,43 @@ header nav{
    padding-bottom: 50px;
    background-color: rgb(242, 242, 242);
 }
-.explorer_restau h1{
+.explorer_restau h2{
     margin-top: 3rem;
     font-size: 2rem;
 }
 .explorer_restau P{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 0px 0px 30px;
 
     
 }
 #button_explorer{
-    margin-top: 2%;
-    margin-left: 5%;
     background-image: linear-gradient(to top,#9356DC, #FF79DA);
     border: none;
-    width: 70%;
-    height: 60px;
+    width: 16rem;
+    height: 55px;
     border-radius: 30px;
     color: white;
     font-size: 1.3em; 
     font-weight: 300;
-    box-shadow: 3px 3px 13px 1px rgba(0,0,0,0.53);  
+    box-shadow: 3px 3px 13px 1px rgba(0,0,0,0.53); 
+    text-decoration: none; 
+    text-align: center;
+    font-size: 1.2rem;
 }
-.button:hover{
+#button_explorer:hover{
+    transform: scale(1.01); 
+    transition: transform 400ms;
+    opacity: 0.8;
     animation: button 1s ease forwards;
-    animation: display 400ms ease-out 3000ms normal both;
+    box-shadow: 10px 10px 20px #565656;
+    
 }
-
-
-}
-
 /*===================================EXPLORE BUTTON===========================================*/
+
 aside{
     padding-top: 2rem;
-    padding-bottom: 3.4rem;
+    padding-bottom: 3.5rem;
 }
 aside li:hover{
     ba
@@ -128,7 +152,7 @@ ul{
 }
 li{
     display: flex;
-    margin-top: 5%;
+    margin-top: 25px;
     align-items: left;
 }
 .number_list{
@@ -148,7 +172,7 @@ li{
     gap: 10%;
     padding: 2rem 3rem;
     background-color: #f6f6f6;
-    width: 230px;
+    width: 64vw;
     border-radius: 1.2rem;
     margin-left: 0.6rem;
     box-shadow: 3px 3px 13px 1px rgba(0,0,0,0.53);
@@ -157,11 +181,16 @@ li{
     background-color: #e4d5f6;
 }
 
+li:hover > .container_fonct span{
+   color: #9356dc;   
+}
+
 /*==============================MENUS================================================*/
 #menus_bloc{
     background-color: #f6f6f6;
     padding: 4rem 1.2rem;
     height: 170vh;
+    padding-bottom: 7rem;
     
 }
 .menus_section{
@@ -177,7 +206,6 @@ li{
    border-radius: 16px 15px 15px 15px;
    border-color: transparent;
    box-shadow:  1px 2px 2px grey;
-
 }
 .restaurant_link{
     
@@ -187,14 +215,15 @@ li{
     border-radius: 15px 15px 0px 0px;
     width: 100%;  
     height: 26vh;
+    object-fit: cover;
 }
 .card_img{
     
 }
 .menus_nouveau{
     font-weight: bold;
-    width: 15vw;
-    height: 3vh;
+    width: 55px;
+    height: 20px;
     background-color: #99e2d0;
     color: #278870;
     font-size: small;
@@ -211,9 +240,6 @@ li{
     margin-left: 1rem;
     margin-right: 2rem;
     margin-bottom: ;
-}
-.card_description span{
-    
 }
 .fa-heart{
     margin-top: 1.2rem;
@@ -253,11 +279,26 @@ footer{
     flex-direction: column;
     color: white;
     margin-bottom: 0;
-    margin-top: 2rem;
+    
 } 
 footer ul{
     margin-left: 2rem;
 }
 footer li{
-    gap: 5%;
+    gap: 25px;
 }
+.contact__link{
+    color: white;
+}
+@media screen and (min-width: 750px){
+   footer ul{
+    display: flex;
+    gap: 30px;
+    width: 69%;
+    align-items: center;
+   } 
+   footer li{
+    align-items: center;
+   }
+}
+

@@ -2,7 +2,8 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" media="screen and (max-width:375px)" href="./css/mobile_main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet"  href="./css/mobile_main.css">
     <script src="https://kit.fontawesome.com/14b9616f44.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh my food</title>
@@ -10,8 +11,7 @@
 <body>
     <header>
         <nav>
-            <a href="#" id="button"><img class="logo" src="./images/logo/ohmyfood.png" alt="logo Oh my food"></a>
-        </nav>
+           <h1>ohmyfood</h1>   
     </header>
     <main>
             <div id="bloc_location">
@@ -19,7 +19,7 @@
                 <input id="search_bar" type="search" placeholder="Paris,Belleville"> 
             </div>
         <section class="explorer_restau">
-            <h1>Réservez le menu qui <br>vous convient</h1>
+            <h2>Réservez le menu qui <br>vous convient</h2>
             <p>Découvrez des restaurants d'exception,<br> séléctionés par nos soins.</p>
             
                 <div class="button">
@@ -29,7 +29,7 @@
         </section>
         <div id="main_bloc">
             <aside>
-                <h1>Fonctionnement</h1>
+                <h2>Fonctionnement</h2>
                 <ul>
                     <li>
                         <div class="number_list">
@@ -62,10 +62,10 @@
                 </ul>
             </aside>
             <section id="menus_bloc">
-                <h1> Restaurants</h1>
+                <h2> Restaurants</h2>
                 <div class="menus_section">
                     <div class="food_bloc">
-                        <a href = "../Openclassroom_P3-master/html/palette_du_gout.html" class="restaurant_link">
+                        <a href = "../Openclassroom_P3/html/palette_du_gout.html" class="restaurant_link">
                             <div class="card_img">
                                 <span class="menus_nouveau">
                                     Nouveau
@@ -74,7 +74,7 @@
                             </div>
                             <div class="card_description">
                                 <div class="description">
-                                    <h2>La palette du goût</h2>
+                                    <h3>La palette du goût</h3>
                                     <p>Ménilmontant</p>
                                 </div>
                                 <span><i class="fa-regular fa-heart heart_1"></i> 
@@ -84,7 +84,7 @@
                         </a>
                     </div>    
                     <div class="food_bloc">
-                        <a href = "../Openclassroom_P3-master/html/Note_enchante.html" class="restaurant_link">
+                        <a href = "./html/Note_enchante.html" class="restaurant_link">
                             <div class="card_img">
                                 <span class="menus_nouveau">
                                     Nouveau
@@ -93,7 +93,7 @@
                             </div>
                             <div class="card_description">
                                 <div class="description">
-                                    <h2>La note enchantée</h2>
+                                    <h3>La note enchantée</h3>
                                     <p>Charonne</p>
                                 </div>
                                 <span><i class="fa-regular fa-heart heart_1"></i> 
@@ -103,7 +103,7 @@
                         </a>
                     </div>    
                     <div class="food_bloc">
-                        <a href = "../Openclassroom_P3/html/A_la_francaise.html" class="restaurant_link">
+                        <a href = "./html/A_la_francaise.html" class="restaurant_link">
                             <div class="card_img">
                                 <span class="menus_nouveau">
                                     Nouveau
@@ -112,7 +112,7 @@
                             </div>
                             <div class="card_description">
                                 <div class="description">
-                                    <h2>À la française</h2>
+                                    <h3>À la française</h3>
                                     <p>Cité Rouge</p>
                                 </div>
                                 <span><i class="fa-regular fa-heart heart_1"></i> 
@@ -122,7 +122,7 @@
                         </a>
                     </div>    
                     <div class="food_bloc">
-                        <a href = "../Openclassroom_P3-master/html/delice.html" class="restaurant_link">
+                        <a href = "./html/delice.html" class="restaurant_link">
                             <div class="card_img">
                                 <span class="menus_nouveau">
                                     Nouveau
@@ -131,7 +131,7 @@
                             </div>
                             <div class="card_description">
                                 <div class="description">
-                                    <h2>Le délice des sens</h2>
+                                    <h3>Le délice des sens</h3>
                                     <p>Folie-Méricourt</p>
                                 </div>
                                 <span><i class="fa-regular fa-heart heart_1"></i> 
@@ -148,7 +148,7 @@
 
     </main>
     <footer>
-        <h3>oh my food</h3>
+        <h4>oh my food</h4>
         <ul class="footer_list">
             <li>
                 <span><i class="fa-solid fa-utensils"></i></span> Proposer un restautant
@@ -160,9 +160,12 @@
                 Mention légales
             </li>
             <li>
-                Contact
+                <a class="contact__link" href="mailto:contact@ohmyfood.com">
+                    Contact
+                </a>
             </li>
         </ul>
     </footer>
 </body> 
 </html>
+

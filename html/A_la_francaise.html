@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen and (max-width:375px)" href="../css/restaurant_mobile.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet"  href="../css/restaurant_mobile.css">
     <script src="https://kit.fontawesome.com/14b9616f44.js" crossorigin="anonymous"></script>
     <title>Oh my food</title>
 </head>
@@ -34,16 +35,16 @@
                             </span> 
                         </div>  
                         <div class="menu_bloc">
-                            <section>
+                            <section class="menu menu1">
                                 <h2>ENTRÉES</h2>
                                 <aside>
                                     <div class="restaurant_menu">
                                         <div class="menu_bloc_test">
-                                            <h3>Velouté de légumes d'antan</h3>
-                                            <p>Carotte, panais, topinambour</p>
+                                            <h3>Tartare de poulpe acidulé</h3>
+                                            <p>Aux zestes d'orange</p>
                                         </div> 
                                         <b>
-                                            35€
+                                            25€
                                         </b>
                                         <div class="menu__liste__item__circle">
                                             <i class="fa-solid fa-circle-check"></i>
@@ -75,7 +76,7 @@
                                       </div>                                        
                                 </aside>
                             </section>
-                            <section>
+                            <section class="menu menu1">
                                 <h2>PLATS</h2>
                                 <aside>
                                       <div class="restaurant_menu">
@@ -117,7 +118,7 @@
 
                                 </aside>
                             </section>
-                            <section>
+                            <section class="menu menu">
                                 <h2>DÉSSERTS</h2>
                                 <aside>
                                       <div class="restaurant_menu">
@@ -177,7 +178,9 @@
                 Mention légales
             </li>
             <li>
-                Contact
+                <a class="contact__link" href="mailto:contact@ohmyfood.com">
+                    Contact
+                </a>
             </li>
         </ul>
     </footer>

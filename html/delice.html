@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet"  href="../css/restaurant_mobile.css">
     <script src="https://kit.fontawesome.com/14b9616f44.js" crossorigin="anonymous"></script>
     <title>Oh my food</title>
@@ -12,9 +13,10 @@
     <!--arrow logo-->    
         <div class="header_arrow">
             <a href="../index.html">
-                <span><i class="fas fa-arrow-left">
-                    </i>
-                </span>
+            <span>
+               <span><i class="fas fa-arrow-left">
+                </i>
+            </span>
             </a>
         </div>
     <!--logo--> 
@@ -33,10 +35,10 @@
                             </span> 
                         </div>  
                         <div class="menu_bloc">
-                            <section>
+                            <section class="menu menu1">
                                 <h2>ENTRÉES</h2>
                                 <aside>
-                                      <div class="restaurant_menu">
+                                    <div class="restaurant_menu">
                                         <div class="menu_bloc_test">
                                             <h3>Tartare de thon</h3>
                                             <p>Assaisonné au yuzu</p>
@@ -45,8 +47,7 @@
                                             25€
                                         </b>
                                         <div class="menu__liste__item__circle">
-                                            <i class="fas fa-check-circle">
-                                            </i>
+                                            <i class="fa-solid fa-circle-check"></i>
                                         </div>
                                       </div>
                                       <div class="restaurant_menu">
@@ -58,8 +59,7 @@
                                             35€
                                         </b>
                                         <div class="menu__liste__item__circle">
-                                            <i class="fas fa-check-circle">
-                                            </i>
+                                            <i class="fa-solid fa-circle-check"></i>
                                         </div>
                                       </div>
                                       <div class="restaurant_menu">
@@ -71,26 +71,24 @@
                                             20€
                                         </b>
                                         <div class="menu__liste__item__circle">
-                                            <i class="fas fa-check-circle">
-                                            </i>
+                                            <i class="fa-solid fa-circle-check"></i>
                                         </div>
                                       </div>                                        
                                 </aside>
                             </section>
-                            <section>
+                            <section class="menu menu1">
                                 <h2>PLATS</h2>
                                 <aside>
                                       <div class="restaurant_menu">
                                         <div class="menu_bloc_test">
-                                            <h3>Poulet rôti aux herbes de Provence</h3>
+                                            <h3>Poulet rôti aux herbes de Provence </h3>
                                             <p>Et sa crème de truffe</p>
                                         </div> 
                                         <b>
                                             40€
                                         </b>
                                         <div class="menu__liste__item__circle">
-                                            <i class="fas fa-check-circle">
-                                            </i>
+                                            <i class="fa-solid fa-circle-check"></i>
                                         </div>
                                       </div>
                                       <div class="restaurant_menu">
@@ -102,8 +100,7 @@
                                             35€
                                         </b>
                                         <div class="menu__liste__item__circle">
-                                            <i class="fas fa-check-circle">
-                                            </i>
+                                            <i class="fa-solid fa-circle-check"></i>
                                         </div>
                                       </div>
                                       <div class="restaurant_menu">
@@ -115,13 +112,13 @@
                                             44€
                                         </b>
                                         <div class="menu__liste__item__circle">
-                                            <i class="fas fa-check-circle">
-                                            </i>
+                                            <i class="fa-solid fa-circle-check"></i>
                                         </div>
                                     </div>                                      
+
                                 </aside>
                             </section>
-                            <section>
+                            <section class="menu menu">
                                 <h2>DÉSSERTS</h2>
                                 <aside>
                                       <div class="restaurant_menu">
@@ -133,8 +130,7 @@
                                             18€
                                         </b>
                                         <div class="menu__liste__item__circle">
-                                            <i class="fas fa-check-circle">
-                                            </i>
+                                            <i class="fa-solid fa-circle-check"></i>
                                         </div>
                                       </div>
                                       <div class="restaurant_menu">
@@ -146,33 +142,29 @@
                                             22€
                                         </b>
                                         <div class="menu__liste__item__circle">
-                                            <i class="fas fa-check-circle">
-                                            </i>
+                                            <i class="fa-solid fa-circle-check"></i>
                                         </div>
                                       </div>
                                       <div class="restaurant_menu">
                                         <div class="menu_bloc_test">
-                                            <h3>Tiramisu</h3>
+                                            <h3>Tiramisu </h3>
                                             <p>À la noisette</p>
                                         </div> 
                                         <b>
                                             23€
                                         </b>
                                         <div class="menu__liste__item__circle">
-                                            <i class="fas fa-check-circle">
-                                            </i>
+                                            <i class="fa-solid fa-circle-check"></i>
                                         </div>
                                       </div>                                        
                                 </aside>
                             </section> 
-                        </div>                                 
-                        <div class="button">
-                            <button onclick="location.href='#'" id="button_explorer" type="button">Commander</button>
-                        </div> 
-                    </div>
-                </div>                      
-            </main>    
-
+                </div>                                 
+                            <div class="button">
+                                <button onclick="location.href='#'" id="button_explorer" type="button">Commander</button>
+                            </div> 
+                    </div>                  
+                </main>    
     <footer>
         <h3>oh my food</h3>
         <ul class="footer_list">
@@ -186,7 +178,9 @@
                 Mention légales
             </li>
             <li>
-                Contact
+                <a class="contact__link" href="mailto:contact@ohmyfood.com">
+                    Contact
+                </a>
             </li>
         </ul>
     </footer>
