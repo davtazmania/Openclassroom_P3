@@ -1,5 +1,0 @@
-animation: slow 600ms linear 0ms forwards 1 normal;
-.restaurant_menu:hover .menu__liste__item__circle .fa-circle-check{
-    transition: transform 500ms ease-in-out;
-    transform: rotate(360deg);
-}
