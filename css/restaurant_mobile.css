@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
-
+title{
+    font-family: "Shrikhand", arial, sans-serif;
+}
 h1{
     font-family: "Shrikhand", arial, sans-serif;
     font-size: xx-large;
@@ -63,6 +65,55 @@ li{
     align-items: left;
 }
 /*===============================================*/
+.loader{
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    inset: 0 ;
+    z-index: 1;
+    opacity: 1;
+    animation: disappear 200ms;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    transform-origin: top;
+    display: flex;
+    font-family: "Shrikhand", arial, sans-serif;
+}
+.loader__menu{
+   display: flex;
+   font-family: "Shrikhand", arial, sans-serif;
+   align-items: center;
+   margin-left: 10vw;
+}
+.loader__letter{
+   font-size: 3.2rem;
+   color: white;
+}
+.d__loader{
+   font-size: 3.2rem;
+   color: white;
+}
+.loader i{
+   animation: spin 3s infinite linear;
+   color: white;
+}
+@keyframes disappear{
+   0%{
+       transform: scale(1);
+   }
+   100%{
+       transform: scale(0);
+       visibility: hidden;
+   }
+}
+@keyframes spin{
+   100%{
+       transform: rotate(360deg);
+   }
+}
+
+
+/*======================================LOADER===================================================*/
 body{
     margin: 0;
 }
@@ -110,7 +161,7 @@ main{
     width: 100%;
     height: 250px;
 }
-restaurant{
+.restaurant{
     border-radius: 15px 15px 0px 0px;
 }
 
@@ -162,31 +213,31 @@ restaurant{
     }
 }
 .menu1 .resto1{
-    animation: slow 600ms linear 1ms forwards 1 normal;   
+    animation: slow 2000ms linear 1ms forwards 1 normal;   
 }
 .menu1 .resto2{
-    animation: slow 1200ms linear 2ms forwards 1 normal;   
+    animation: slow 2400ms linear 1ms forwards 1 normal;   
 }
 .menu1 .resto3{
-    animation: slow 1800ms linear 3ms forwards 1 normal;   
+    animation: slow 2800ms linear 1ms forwards 1 normal;   
 }
 .menu2 .resto4{
-    animation: slow 2700ms linear 8ms forwards 1 normal;
+    animation: slow 3200ms linear 1ms forwards 1 normal;
 }
 .menu2 .resto5{
-    animation: slow 3500ms linear 10ms forwards 1 normal;
+    animation: slow 3600ms linear 1ms forwards 1 normal;
 }
 .menu2 .resto6{
-    animation: slow 4500ms linear 12ms forwards 1 normal;
+    animation: slow 4000ms linear 1ms forwards 1 normal;
 }
 .menu3 .resto7{
-    animation: slow 6000ms linear 16ms forwards 1 normal;
+    animation: slow 4400ms linear 1ms forwards 1 normal;
 }
 .menu3 .resto8{
-    animation: slow 6500ms linear 18ms forwards 1 normal;
+    animation: slow 4800ms linear 1ms forwards 1 normal;
 }
 .menu3 .resto9{
-    animation: slow 6900ms linear 20ms forwards 1 normal;
+    animation: slow 5200ms linear 1ms forwards 1 normal;
 }
 
 /*=======================================*/
