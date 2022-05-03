@@ -52,6 +52,7 @@ html{
     margin: 0;
     padding: 0;
 }
+
 h1{
     font-family: "Shrikhand", arial, sans-serif;
     font-size: xx-large;
@@ -65,13 +66,15 @@ h2{
     font-size: 2em;
     width: 100%;
     margin-left: 1rem;
+    margin-bottom: 2rem;
 }
 .description h3{
     font-size: 1.2em;
-    margin-top: 0rem;
+    margin-top: 1rem;
 }
 p{
     font-size: 1em;
+    margin-top: 1rem;
 }
 #bloc_location p{
     font-size: 1.2em;
@@ -84,6 +87,7 @@ h4{
     font-family: "Shrikhand", arial, sans-serif;
     margin-left: 2rem; 
     margin-bottom: 0; 
+    margin-top: 1.5rem;
 }
 a{
     color: black;
@@ -245,8 +249,8 @@ header nav{
 .explorer_restau P{
     font-size: 1.2rem;
     margin: 0px 0px 30px;
-
-    
+    margin-top: 1rem;
+    color: grey;    
 }
 #button_explorer{
     background-image: -webkit-gradient(linear,left bottom, left top,from(#9356DC), to(#FF79DA));
@@ -336,7 +340,7 @@ li:hover > .container_fonct span{
 #menus_bloc{
     background-color: #f6f6f6;
     padding: 4rem 1.2rem;
-    height: 170vh;
+    height: 177vh;
     padding-bottom: 7rem;
     
 }

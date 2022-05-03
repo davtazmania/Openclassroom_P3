@@ -24,6 +24,7 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+    margin-top: 2.5rem;
 }
 body {
 	line-height: 1;
@@ -82,6 +83,7 @@ h3{
     overflow: hidden;
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
+       margin-bottom: 0.5rem;
 }
 
 footer h3{
